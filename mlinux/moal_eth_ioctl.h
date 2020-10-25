@@ -286,7 +286,7 @@ int woal_do_ioctl(struct net_device *dev, struct ifreq *req, int cmd);
 #ifdef USERSPACE_32BIT_OVER_KERNEL_64BIT
 typedef struct _android_wifi_priv_cmd {
     /** Buffer pointer */
-	t_u64 buf;
+	t_u32 buf;
     /** buffer updated by driver */
 	int used_len;
     /** buffer sent by application */
